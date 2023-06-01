@@ -1,7 +1,3 @@
-
-
-1.
-
 import random
 
 def funktsiooninimi(vahemik):
@@ -10,9 +6,9 @@ def funktsiooninimi(vahemik):
 
 print(funktsiooninimi([47, 59]))
 
-2.
 
-nimekiri = ["Lewis", "Valtteri", "Max", "George", "Marko"]
+
+nimekiri = ["Lewis", "Valtteri", "Max", "George", "Karl"]
 ajad = []
 
 for nimi in nimekiri:
@@ -24,19 +20,19 @@ for nimi in nimekiri:
 for aeg in ajad:
     print(aeg[0], aeg[1], aeg[2], aeg[3])
 
-3.
+
 
 for aeg in ajad:
     print(f"{aeg[0]:<10} {aeg[1]} {aeg[2]} {aeg[3]}")
 
-4.
+
 
 print(f"{'Nimi':<10} {'Aeg':<10} {'S1':<10} {'S2':<10} {'S3':<10}")
 for aeg in ajad:
     aeg_summa = sum(aeg[1:])
     print(f"{aeg[0]:<10} {aeg_summa:<10.3f} {aeg[1]:<10.3f} {aeg[2]:<10.3f} {aeg[3]:<10.3f}")
 
-5.
+
 
 def aja_vormindamine(aeg):
     tund = int(aeg / 3600)
@@ -51,7 +47,7 @@ for aeg in ajad:
     aeg_formatted = aja_vormindamine(aeg_summa)
     print(f"{aeg[0]:<10} {aeg_formatted:<15} {aeg[1]:<10.3f} {aeg[2]:<10.3f} {aeg[3]:<10.3f}")
 
-6.
+
 
 ajad_sorted = sorted(ajad, key=lambda x: x[1])
 
@@ -60,7 +56,7 @@ for aeg in ajad_sorted:
     aeg_formatted = aja_vormindamine(aeg_summa)
     print(f"{aeg[0]:<10} {aeg_formatted} {aeg_summa:<10.3f}")
 
-7.
+
 
 def voi_aeg():
     aegade_summa = 0
@@ -71,7 +67,7 @@ def voi_aeg():
 
 print(aja_vormindamine(voi_aeg()))
 
-8.
+
 
 ringid = 10
 sonum = []
@@ -105,7 +101,7 @@ for s in sonum_sorted:
     vead_formatted = str(s[2])
     print(f"{nimi:<10} {aeg_formatted:<15} {vead_formatted:<10}")
 
-9.
+
 
 ringid = 10
 sonum = []
@@ -141,7 +137,7 @@ for i, s in enumerate(sonum_sorted):
     vead_formatted = str(s[2])
     print(f"{nimi:<10} {aeg_formatted:<15} {vahe_formatted} {vead_formatted:<10}")
 
-10.
+
 
 ringid = 10
 sonum = []
@@ -178,7 +174,6 @@ for i, s in enumerate(sonum_sorted):
     aeg_formatted = aja_vormindamine(s[1])
     print(f"{nimi:<10} {aeg_formatted:<15} {ringid_formatted}")
 
-11.
 
 ringid = 10
 sonum = []
